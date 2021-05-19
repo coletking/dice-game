@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="start.html">
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
+        <title>stimulatore</title>
+
+    </head>
+    <body>
+        <div class="container-fluid bg-dark M">
+            <div class="playersection-avata">
+                <div class="Player1 d-flex justify-content-between">
+                    <img src="img/girl.png" style="height: 40px;"
+                        class="img-fluid m-4" alt="">
+                    <img src="img/man (1).png" style="height: 40px;"
+                        class="img-fluid m-4" alt="">
+                </div>
+                <div class="Player1 d-flex justify-content-between">
+                    <button type="button" class="btn btn-outline-warning">
+                        Player 1 <span class="badge bg-success">0</span>
+                    </button>
+                    <button type="button" class="btn btn-outline-warning">
+                        player 2 <span class="badge bg-success">0</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="header text-center text-outline-danger">
+                <h2 class="text-white">welcome to Kings Dice Stimulator</h2>
+            </div>
+
+            <div class="container-fluid text-center text-white view-colour">
+                <div class="row row-md gap-2">
+                    <div class="col box-red">
+
+                    </div>
+                    <div class="col box-blue">
+
+                    </div>
+                    <div class="col box-yello">
+
+                    </div>
+                    <div class="col box-green">
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Button trigger modal -->
+            <!-- <div class="cho-clour text-center m-3" >
+                <button type="button" class="btn btn-primary buttonview" id="hidpub" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    Choose Your Colour
+                </button>
+            </div> -->
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop"
+                data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Choose
+                                two Colours</h5>
+                            <button type="button" class="btn-close"
+                                data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid text-center text-white
+                                view-colour">
+                                <div class="d-flex gap-2">
+                                    <div class="col  colour-card box-red">
+                                        Red
+                                    </div>
+                                    <div class="col  colour-card box-blue">
+                                        Blue
+                                    </div>
+                                    <div class="col  colour-card box-yello">
+                                        Yello
+                                    </div>
+                                    <div class="col  colour-card box-green">
+                                        green
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" id="closeGame" class="btn
+                                btn-danger" data-bs-dismiss="modal">Close</button>
+                        
+                                <button type="button" id="startGame" class="btn
+                                btn-success ">Start Game</button>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dice">
+            <ol class="die-list even-roll" data-roll="1" id="die-1">
+              <li class="die-item" data-side="1">
+                <span class="dot"></span>
+              </li>
+              <li class="die-item" data-side="2">
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </li>
+              <li class="die-item" data-side="3">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </li>
+              <li class="die-item" data-side="4">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </li>
+              <li class="die-item" data-side="5">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </li>
+              <li class="die-item" data-side="6">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </li>
+            </ol>
+            <ol class="die-list odd-roll" data-roll="1" id="die-2">
+              <li class="die-item" data-side="1">
+                <span class="dot"></span>
+              </li>
+              <li class="die-item" data-side="2">
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </li>
+              <li class="die-item" data-side="3">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </li>
+              <li class="die-item" data-side="4">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </li>
+              <li class="die-item" data-side="5">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </li>
+              <li class="die-item" data-side="6">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </li>
+            </ol>
+          </div>
+          <button type="button" id="roll-button">Roll Dice</button>
+         
+
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/start.js"></script>
+    </body>
+</html>
